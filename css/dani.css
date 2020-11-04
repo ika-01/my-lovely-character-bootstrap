@@ -44,9 +44,9 @@ main img{
     max-width: 100%;
 }
 
-h1, h2 {
+h1, h2, .navbar-brand, .cute-font {
+    /*------------------------- Não está a fazer nada*/
     font-family: 'Palanquin', sans-serif;
-    font-size: 40px;
 }
 
 

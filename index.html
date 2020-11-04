@@ -12,6 +12,7 @@
 
  
     <link href = "https://fonts.googleapis.com/css2? family = Palanquin & display = swap" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
     <!-- A do css tem de vir depois da bootstrap!!!!!!!!!-->
     <link rel="stylesheet" type="text/css" href="css/dani.css">
 
@@ -21,8 +22,8 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="#">Dani</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,13 +35,22 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tracos">Traços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#relacionamentos">Relacionamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacta">Contacta a <span class="cute-font">Dani</span></a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <header class="jumbotron text-center bg-primary">
+    <header class="jumbotron text-center bg-primary mt-5">
 
         <!-- JUMBOTRON! -->
         <!--
@@ -51,10 +61,13 @@
         <img class="rounded-circle" src="images/BlyManor.png">
         <h1>Dani Clayton</h1>
 
+        <!--Só para, no nav, ao clicar em "sobre", saltar para aqui e não para cima do titulo "sobre" msm -->
+        <div id="sobre"></div>
     </header>
 
     <main class="container">
-        <h2>Sobre</h2>
+        <!-- ANTES DE TER CRIADO A DIV NO HEADER PARA ISTO: <h2 id="sobre">Sobre</h2> -->
+        <h2 >Sobre</h2>
         <p>Danielle (ou "Dani") Clayton é uma personagem importante em The Haunting Of Bly Manor. Ela é uma professora americana que se mudou para Londres e atual governanta de Bly Manor.
             <br> Por extensão, ela é a pseudo-mãe e professora das crianças Wingrave, Miles e Flora.
         </p>
@@ -62,7 +75,7 @@
         <img class="img-fluid" src="images/Dani_Jamie_2.jpg">
         <p>Dani e Jamie na estufa</p>
 
-        <h2>Traços</h2>
+        <h2 id="tracos">Traços</h2>
         <div class="row">
             <div class="col-12 text-center">
                 <ul class="list-group list-group-horizontal">
@@ -74,16 +87,16 @@
             </div>
         </div>
 
-        <h2 class="mt-4 mb-2">Relacionamentos</h2>
+        <h2 id="relacionamentos" class="mt-4 mb-2">Relacionamentos</h2>
         <p>O seu tempo na Bly Manor foi suficiente para criar relações fortes com as crianças e trabalhadores da mansão. Cada personagem revela características fortes e um papel importante no desenrolar da história, não só de Bly Manor, como de Danielle. São estas:</p>
         
          <!-- estou a criar uma linha-->
          <!-- O Stor so usa rows quando quer que o conteudo seja responsivo, senão fica tudo no container principal, mas isso depende de pessoa para pessoa-->
-        <div class="row mx-auto">
+        <div class="row ">
             <!-- Coluna 1-->
             <div class="col-lg-4">
-                <div class="card">
-                    <img src="images/Jamie.jpg" class="card-img-top">
+                <div class="card h-100 m-auto">
+                    <img src="images/Jamie02.jpg" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Jamie</h5>
                         <p class="card-text">Jamie is unknowingly the narrator of the entire story of Bly Manor. She tells a group of younger men and women a haunting story about Bly Manor. Eventually, it is revealed — although not to those hearing the story — that she is in fact, Jamie, the girl from the story. After she leaves the party and falls asleep in her hotel room, a hand touches her shoulder, and it is revealed that Dani has been watching over her all along.</p>
@@ -94,7 +107,7 @@
 
             <!-- Coluna 2-->
             <div class="col-lg-4">
-                <div class="card">
+                <div class="card h-100 m-auto">
                     <img src="images/Hannah.jpg" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Hannah</h5>
@@ -107,7 +120,7 @@
 
             <!-- Coluna 3-->
             <div class="col-lg-4">
-                <div class="card">
+                <div class="card h-100 m-auto">
                     <img src="images/Owen.jpg" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Owen</h5>
@@ -120,7 +133,7 @@
             </div>
         </div>
 
-        <h2 class="mt-3">Contacta a Dani</h2>
+        <h2 id="contacta" class="mt-3">Contacta a Dani</h2>
         <form class="border p-3 mb-2">
             <div class="form-group">
               <label for="exampleInputEmail1">Nome</label>
