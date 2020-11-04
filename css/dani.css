@@ -25,9 +25,13 @@ header img{
     border: 20px solid #acb0a2;
 }
 
-h1, h2 {
-    font-family: 'Palanquin', sans-serif;
-    font-size: 40px;
+/*Estou a redefenir o bg-primary que vem com o Bootsrap */
+.bg-primary{
+    background-color: rgb(82 82 70) !important;
+    /*Quando queres uma coisa importante (onde n importa o que está para trás ou para a frente): !important
+    O último important é o que fica registado */
+
+    /*AO FAZER ISTO, DE CADA VEZ QUE CRIAR UMA COISA NOVA COM O BOOTSRAP QUE TENHA COR PREDEFINIDA, A COR VAI SER A QUE EU DEFINI */
 }
 
 main{
@@ -39,6 +43,12 @@ main{
 main img{
     max-width: 100%;
 }
+
+h1, h2 {
+    font-family: 'Palanquin', sans-serif;
+    font-size: 40px;
+}
+
 
 h2{
     font-size: 30px;
